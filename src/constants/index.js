@@ -1,8 +1,6 @@
 import {
-  c,
+  cs,
   python,
-  java,
-  cpp,
   javascript,
   html,
   css,
@@ -14,7 +12,6 @@ import {
   weatherpedia,
   termpw,
   payloadmaster,
-  threejs,
   mhft,
   sketcher,
   mathwork,
@@ -38,20 +35,18 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
+  { title: "C#", icon: cs },
   { title: "Python", icon: python },
-  { title: "Java", icon: java },
 ];
 
 export const technologies = [
+  { name: "C#", icon: cs },
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
   { name: "JavaScript", icon: javascript },
   { name: "Rect JS", icon: reactjs },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "Node JS", icon: nodejs },
-  { name: "Three JS", icon: threejs },
   { name: "git", icon: git },
 ];
 
@@ -104,8 +99,7 @@ export const projects = [
       { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
       { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: weatherpedia
   },
   {
     name: "Terminal Like Portfolio Website",
@@ -116,8 +110,7 @@ export const projects = [
       { name: "css", color: "green-text-gradient" },
       { name: "Javascript", color: "pink-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: termpw
   },
   {
     name: "Mental Health Fitness Tracker",
@@ -128,9 +121,7 @@ export const projects = [
       { name: "Jupyter Notebook", color: "green-text-gradient" },
       { name: "Regression Algorithms", color: "pink-text-gradient" },
     ],
-    image: mhft,
-    source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+    image: mhft
   },
   {
     name: "PayloadMaster",
@@ -139,8 +130,7 @@ export const projects = [
     tags: [
       { name: "shell", color: "blue-text-gradient" },
     ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+    image: payloadmaster
   },
   {
     name: "CompileVortex",
@@ -151,8 +141,7 @@ export const projects = [
       { name: "CSS", color: "green-text-gradient" },
       { name: "HTML", color: "pink-text-gradient" },
     ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
+    image: CompileVortex
   },
   {
     name: "Sketcher",
@@ -164,7 +153,6 @@ export const projects = [
       { name: "Python", color: "pink-text-gradient" },
     ],
 
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: sketcher
   },
 ];
