@@ -1,6 +1,7 @@
 {
   "name": "luke-penney-3d",
-  "private": true,
+  "homepage": "https://ldp12.github.io/Portfolio-Website-3D",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
