@@ -40,4 +40,4 @@ gh-pages/
 
 # Ignore hidden system files
 *.log
-*~
+*~node_modules/.cache/gh-pages/
