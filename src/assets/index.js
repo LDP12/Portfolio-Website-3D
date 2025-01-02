@@ -37,7 +37,7 @@ import rider from "./tech/rider.png";
 import github from "./tech/github.png";
 
 // Import common assets
-import logo from "./logo.svg";
+import logo from "./logo.jpg";
 import githubIcon from "./githubIcon.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
