@@ -20,31 +20,37 @@ const Navbar = () => {
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
-      {navLinks.map((link) => (
+      <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+        {navLinks.map((link) => (
+            <li
+                key={link.id}
+                className={`${
+                    active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
+                } hover:text-white text-[20px] font-medium cursor-pointer`}
+                onClick={() => {
+                  setActive(link.title);
+                  if (isSecondary) {
+                    setToggle(false);
+                  }
+                }}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+        ))}
         <li
-          key={link.id}
-          className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
-          onClick={() => {
-            setActive(link.title);
-            if (isSecondary) {
-              setToggle(false);
-            }
-          }}
+            className={`text-${
+                isSecondary ? 'secondary' : 'white'
+            } hover:text-white text-[20px] font-medium cursor-pointer`}
         >
-          <a href={`#${link.id}`}>{link.title}</a>
+          <a
+              href="/Resume.pdf"
+              download
+              className="text-inherit hover:text-inherit"
+          >
+            Resume
+          </a>
         </li>
-      ))}
-      <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
-      >
-        <button onClick={toggleResume}>Resume</button>
-      </li>
-    </ul>
+      </ul>
   );
 
   return (
